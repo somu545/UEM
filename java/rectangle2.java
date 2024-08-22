@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+class A
+{
+  Scanner sc = new Scanner(System.in);
+  int w,l;
+  int a=0;
+  void set_data()
+  {
+  System.out.println("Enter Length: ");
+  a=sc.nextInt();
+  
+  }
+  }
+  
+  
+ class B extends  A
+  {
+  void cal()
+  {
+  System.out.println("Enter width: ");
+  w=sc.nextInt();
+  a=w*l;
+  }
+  }
+  
+ class C extends B
+ {
+ void display()
+ {
+	 System.out.println("area of Rectangle is:  "+a);
+  }
+  }
+  
+  
+  class rectangle2
+  {
+  public static void main(String[]args)
+  {
+  C obj =new C();
+  obj.set_data();
+  obj.cal();
+  obj.display();
+  }
+  }
+  
+  

@@ -1,0 +1,19 @@
+import p1.rect_pack;
+import p2.width;
+
+class rect_area
+{
+	public static void main(String args[])
+	{
+		rect_pack obj = new rect_pack();
+		width obj2 = new width();
+		float a=obj.get_length();
+		float b=obj2.get_width();
+		float c = a*b;
+		
+		System.out.println("Area is:" +c);
+	
+	}
+}
+
+		
